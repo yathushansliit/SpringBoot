@@ -10,9 +10,9 @@ import org.springframework.stereotype.Service;
 import com.example.demo.model.Employee;
 
 @Service
-public class EmployeeServiceImpl implements EmployeeService  {
+public class EmployeeServiceImpl   {
 	
-	@Override
+	
 	public List<Employee> getAllEmployees() {
 		List<Employee> list = new ArrayList<>();
 		list.add(new Employee("james", 80));
