@@ -18,11 +18,11 @@ public class EmployeeController {
 	@Autowired
 	EmployeeServiceImpl employeeService;
 	
-	@RequestMapping("/hello")
-	public String greeting() {
-		return "Hello";
-	}
-	
+//	@RequestMapping("/hello")
+//	public String greeting() {
+//		return "Hello";
+//	}
+//	
 //	@RequestMapping("/employees")
 //	public List<Employee> getEmployees() {
 //		return employeeService.getAllEmployees();

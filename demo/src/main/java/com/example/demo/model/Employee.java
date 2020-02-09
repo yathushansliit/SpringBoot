@@ -3,10 +3,18 @@ package com.example.demo.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+
+
+@Entity
 public class Employee {
-	private String name;
-	private int id;
-	private String city;
+	@Id
+	int id;
+	String name;	
+	String city;
 
 //	public Employee(String name, int id, String city) {
 //		this.name = name;
