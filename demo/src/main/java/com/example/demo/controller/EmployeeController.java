@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,9 +23,21 @@ public class EmployeeController {
 		return "Hello";
 	}
 	
-	@RequestMapping("/employees")
-	public List<Employee> getEmployees() {
-		return employeeService.getAllEmployees();
+//	@RequestMapping("/employees")
+//	public List<Employee> getEmployees() {
+//		return employeeService.getAllEmployees();
+//	}
+	
+	@RequestMapping("/employees/{10}")
+	public Employee getAll(@PathVariable int id) {
+		if(id==10) {
+			Employee employee = new Employee("james");
+			employee.setCity("jaffna");
+			return employee;
+		}
+		else {
+			return new Employee();
+		}
 	}
 
 }

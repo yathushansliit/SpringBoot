@@ -13,13 +13,14 @@ import com.example.demo.model.Employee;
 public class EmployeeServiceImpl   {
 	
 	
-	public List<Employee> getAllEmployees() {
-		List<Employee> list = new ArrayList<>();
-		list.add(new Employee("james", 80));
-		list.add(new Employee("liyano", 95));
-		list.add(new Employee("mitchel", 75));
-
-		return list;
-	}
+//	public List<Employee> getAllEmployees() {
+//		List<Employee> list = new ArrayList<>();
+//		list.add(new Employee("james"));
+////		list.add(new Employee("liyano", 95,"uuu"));
+////		list.add(new Employee("mitchel", 75,"yyy"));
+////		list.add(new Employee("rrr",11));
+//
+//		return list;
+//	}
 
 }
